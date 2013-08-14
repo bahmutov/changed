@@ -13,17 +13,17 @@ website and find the History.md or Changes.md or similar file.
 
 I am trying to automate this common action:
 
-  changed -m foo
+    changed -m foo
 
-  // prints
-  0.5.0
-    - fixed tabs
-    - started using bar
+    // prints
+    0.5.0
+        - fixed tabs
+        - started using bar
 
 ## Install and run
 
-  npm install -g changed
-  changed --help
+    npm install -g changed
+    changed --help
 
 ## Related
 
