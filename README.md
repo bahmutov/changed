@@ -1,7 +1,6 @@
 # changed
 
-Quickly fetches latest changes using module's
-history, changes file or readme.
+Quickly fetches changes for a module.
 
 ## Problem
 
@@ -24,6 +23,13 @@ I am trying to automate this common action:
 
     npm install -g changed
     changed --help
+
+## Principle
+
+After installing the latest module's version in the
+temp folder, try to find *History*, *Changes* or similarly
+named file and display its contents. If everything fails,
+displays the README.md file.
 
 ## Related
 
