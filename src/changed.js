@@ -18,7 +18,7 @@ function changed(packageName) {
     console.log('installed', packageName);
     var packageFolder = path.join(installFolder, 'node_modules',
       packageName);
-    console.log('should have been installed in', packageFolder);
+    // console.log('should have been installed in', packageFolder);
     findChanges(packageName, packageFolder);
   });
 }
