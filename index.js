@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var changed = require('./src/changed');
 
 if (module.parent) {

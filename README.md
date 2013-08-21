@@ -13,7 +13,7 @@ website and find the History.md or Changes.md or similar file.
 
 I am trying to automate this common action:
 
-    changed -m foo
+    changed foo
 
     // prints
     0.5.0

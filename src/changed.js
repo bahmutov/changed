@@ -15,7 +15,7 @@ function changed(packageName) {
     prefix: 'temp'
   });
   promise.done(function () {
-    console.log('installed', packageName);
+    // console.log('installed', packageName);
     var packageFolder = path.join(installFolder, 'node_modules',
       packageName);
     // console.log('should have been installed in', packageFolder);

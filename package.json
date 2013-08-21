@@ -3,6 +3,10 @@
   "version": "0.0.0",
   "description": "Fetches changes for a given module",
   "main": "index.js",
+  "preferGlobal": "true",
+  "bin": {
+    "changed": "./index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
