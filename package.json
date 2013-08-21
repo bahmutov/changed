@@ -20,6 +20,8 @@
     "grunt": "~0.4.1"
   },
   "dependencies": {
-    "check-types": "~0.6.4"
+    "check-types": "~0.6.4",
+    "npm-install": "0.0.0",
+    "q": "~0.9.6"
   }
 }
