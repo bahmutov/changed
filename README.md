@@ -2,6 +2,12 @@
 
 Quickly fetches changes for a module.
 
+[![NPM info][nodei.co]][npm-url]
+
+[![Build status][ci-image]][ci-url]
+[![dependencies][dependencies-image]][dependencies-url]
+[![endorse][endorse-image]][endorse-url]
+
 ## Problem
 
 Often your project depends on multiple modules. If you
@@ -42,4 +48,11 @@ Author: Gleb Bahmutov &copy; 2013
 
 License: MIT - do anything with the code, but don't blame me if it does not work.
 
-Support: if you find any problems with the module, email me directly.
+[ci-image]: https://travis-ci.org/bahmutov/changed.png?branch=master
+[ci-url]: https://travis-ci.org/bahmutov/changed
+[nodei.co]: https://nodei.co/npm/changed.png?downloads=true
+[npm-url]: https://npmjs.org/package/changed
+[dependencies-image]: https://david-dm.org/bahmutov/changed.png
+[dependencies-url]: https://david-dm.org/bahmutov/changed
+[endorse-image]: https://api.coderwall.com/bahmutov/endorsecount.png
+[endorse-url]: https://coderwall.com/bahmutov
