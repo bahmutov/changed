@@ -3,6 +3,7 @@ var install = require('npm-utils').install;
 var path = require('path');
 var fs = require('fs');
 var mkdirp = require('mkdirp');
+var norFs = require('nor-fs');
 
 function changed(packageName) {
   check.verifyString(packageName, 'missing package name string');
@@ -17,13 +18,16 @@ function changed(packageName) {
     name: packageName,
     prefix: 'temp'
   });
-  promise.done(function () {
+  promise.then(function () {
     // console.log('installed', packageName);
-    var packageFolder = path.join(installFolder, 'node_modules',
+    var packageFolder = path.join(installFolder, 'lib/node_modules',
       packageName);
     // console.log('should have been installed in', packageFolder);
     findChanges(packageName, packageFolder);
-  });
+
+    console.log('removing temp folder');
+    return norFs.rmdir(installFolder);
+  }).done();
 }
 
 function findChanges(packageName, packageFolder) {
