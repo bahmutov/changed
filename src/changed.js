@@ -3,7 +3,7 @@ var install = require('npm-utils').install;
 var path = require('path');
 var fs = require('fs');
 var mkdirp = require('mkdirp');
-var norFs = require('nor-fs');
+var rm = require('rm-r');
 
 function changed(packageName) {
   check.verifyString(packageName, 'missing package name string');
@@ -26,8 +26,9 @@ function changed(packageName) {
     findChanges(packageName, packageFolder);
 
     console.log('removing temp folder');
-    return norFs.rmdir(installFolder);
-  }).done();
+    rm.rmdir(installFolder);
+    console.log('done removing temp folder');
+  });
 }
 
 function findChanges(packageName, packageFolder) {
