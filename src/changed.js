@@ -2,6 +2,7 @@ var check = require('check-types');
 var install = require('npm-install');
 var path = require('path');
 var fs = require('fs');
+var mkdirp = require('mkdirp');
 
 function changed(packageName) {
   check.verifyString(packageName, 'missing package name string');
@@ -10,6 +11,8 @@ function changed(packageName) {
   // todo: check / strip version
 
   var installFolder = path.join(process.cwd(), 'temp');
+  mkdirp.sync(installFolder);
+
   var promise = install({
     name: packageName,
     prefix: 'temp'
