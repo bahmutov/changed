@@ -1,6 +1,7 @@
-# Changes
 
-## 0.0.0
+0.0.0 / 2013-09-27
+==================
 
-* initial commit
-* README.md, package.json
+  * added deps-ok
+  * initial commit
+  * README.md, package.json
