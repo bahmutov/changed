@@ -4,6 +4,7 @@ var path = require('path');
 var fs = require('fs');
 var mkdirp = require('mkdirp');
 var rm = require('rm-r');
+var exec = require( 'child_process' ).exec;
 
 function changed(packageName) {
   check.verifyString(packageName, 'missing package name string');
@@ -25,9 +26,14 @@ function changed(packageName) {
     // console.log('should have been installed in', packageFolder);
     findChanges(packageName, packageFolder);
 
-    console.log('removing temp folder');
-    rm.rmdir(installFolder);
-    console.log('done removing temp folder');
+    exec( 'rm -rf ' + installFolder, function ( err, stdout, stderr ){
+      if (err) {
+        console.error(err);
+      } else {
+        console.log(stdout, stderr);
+        console.log('done removing temp folder');
+      }
+    });
   });
 }
 
