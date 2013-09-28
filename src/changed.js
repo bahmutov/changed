@@ -1,5 +1,5 @@
 var check = require('check-types');
-var install = require('npm-install');
+var install = require('npm-utils').install;
 var path = require('path');
 var fs = require('fs');
 var mkdirp = require('mkdirp');
