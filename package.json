@@ -24,8 +24,8 @@
   "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "matchdep": "~0.1.2",
-    "grunt-contrib-jshint": "~0.6.2",
+    "matchdep": "~0.3.0",
+    "grunt-contrib-jshint": "~0.7.1",
     "grunt": "~0.4.1",
     "grunt-bump": "0.0.11",
     "grunt-deps-ok": "~0.1.3",
@@ -33,8 +33,8 @@
   },
   "dependencies": {
     "check-types": "~0.6.4",
-    "npm-utils": "0.0.4",
-    "q": "~0.9.6",
+    "npm-utils": "0.0.6",
+    "q": "~0.9.7",
     "mkdirp": "~0.3.5"
   }
 }
