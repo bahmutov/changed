@@ -6,7 +6,7 @@ var mkdirp = require('mkdirp');
 var exec = require('child_process').exec;
 
 function changed(packageName) {
-  check.verifyString(packageName, 'missing package name string');
+  check.verify.string(packageName, 'missing package name string');
 
   console.log('what has changed in', packageName);
   // todo: check / strip version
@@ -37,8 +37,8 @@ function changed(packageName) {
 }
 
 function findChanges(packageName, packageFolder) {
-  check.verifyString(packageName, 'expected package name');
-  check.verifyString(packageFolder, 'expected package folder');
+  check.verify.string(packageName, 'expected package name');
+  check.verify.string(packageFolder, 'expected package folder');
 
   console.assert(fs.existsSync(packageFolder), packageFolder + ' not found');
   console.assert(fs.statSync(packageFolder).isDirectory(),
