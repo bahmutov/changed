@@ -1,4 +1,12 @@
 
+0.0.2 / 2013-11-05
+==================
+
+  * updated all dependencies
+  * fixed jshint errors
+  * adding badges
+  * added travis file
+
 0.0.1 / 2013-09-28
 ==================
 
